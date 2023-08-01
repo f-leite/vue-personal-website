@@ -6,7 +6,7 @@ import TheWelcome from './components/TheWelcome.vue'
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="..." />
+      <HelloWorld msg="THIS IS A WORK IN PROGRESS" />
     </div>
   </header>
 </template>
