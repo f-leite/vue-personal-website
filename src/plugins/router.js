@@ -7,7 +7,7 @@ const routes = [
 
 const router = createRouter({
     routes,
-    history: createWebHistory(),
+    history: createWebHistory('/vue-personal-website/'),
 })
 
 export default router

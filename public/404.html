@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Not Found</title>
+  <script>
+    const base = '/vue-personal-website/';
+    const indexPath = 'index.html';
+    const fullIndexPath = `${base}${indexPath}`;
+    window.history.replaceState({}, '', fullIndexPath);
+    window.location = fullIndexPath;
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

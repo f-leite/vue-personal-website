@@ -9,5 +9,5 @@
 
 <script setup>
 import Navbar from '@/components/Navbar.vue';
-import { RouterView, RouterLink } from 'vue-router'
+import { RouterView} from 'vue-router'
 </script>
