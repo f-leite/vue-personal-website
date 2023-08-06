@@ -3,8 +3,11 @@
 <head>
   <title>Page Not Found</title>
   <script>
-    window.history.replaceState({}, '', '/vue-personal-website/index.html');
-    window.location = '/vue-personal-website/index.html';
+    const base = '/vue-personal-website/';
+    const indexPath = 'index.html';
+    const fullIndexPath = `${base}${indexPath}`;
+    window.history.replaceState({}, '', fullIndexPath);
+    window.location = fullIndexPath;
   </script>
 </head>
 <body>
