@@ -1,41 +1,13 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="THIS IS A WORK IN PROGRESS" />
+  <div class="bg-image" style="background-image: url('src/assets/images/city-night-bg.jpg'); height: 100vh;">
+    <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.5)">
+      <Navbar />
+      <router-view/>
     </div>
-  </header>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+import { RouterView, RouterLink } from 'vue-router'
+</script>
